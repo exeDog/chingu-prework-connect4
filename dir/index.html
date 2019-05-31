@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connect 4</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body class="colorWarmBg">
+<div id="game_header" class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <img src="../images/coin.png" id="winner_coin">
+            <p id="instructions" class="darkerGoldenYellowBg colorWhite">Player 1 Start</p>
+        </div>
+    </div>
+</div>
+
+<div id="game_play_body" class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <table id="game_canvas"  class="colorGreenishBg">
+
+                <!-- rows are inserted via jquery -->
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="game_footer" class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <p id="reset" class="colorDarkRedBg colorWhite">RESET</p>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
